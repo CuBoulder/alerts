@@ -1,0 +1,8 @@
+name: alerts
+recipe: drupal8
+config:
+  webroot: .
+services:
+  appserver:
+    build:
+      - composer install
