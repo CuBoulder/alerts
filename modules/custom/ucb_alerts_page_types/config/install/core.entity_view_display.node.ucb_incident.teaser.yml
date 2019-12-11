@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ucb_incident.field_ucb_incident_events
+    - field.field.node.ucb_incident.field_ucb_incident_status
+    - field.field.node.ucb_incident.field_ucb_incident_type
+    - node.type.ucb_incident
+  module:
+    - user
+id: node.ucb_incident.teaser
+targetEntityType: node
+bundle: ucb_incident
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ucb_incident_events: true
+  field_ucb_incident_status: true
+  field_ucb_incident_type: true

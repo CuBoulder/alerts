@@ -1,0 +1,167 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ucb_incident.field_ucb_incident_events
+    - field.field.node.ucb_incident.field_ucb_incident_sidebar_body
+    - field.field.node.ucb_incident.field_ucb_incident_status
+    - field.field.node.ucb_incident.field_ucb_incident_type
+    - node.type.ucb_incident
+  module:
+    - field_group
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_ucb_incident_tabs:
+      children:
+        - group_ucb_incident_status
+        - group_ucb_incident_sidebar
+        - group_ucb_incident_events
+      parent_name: ''
+      weight: 6
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: Tabs
+    group_ucb_incident_status:
+      children:
+        - title
+        - field_ucb_incident_type
+        - field_ucb_incident_status
+      parent_name: group_ucb_incident_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Status
+    group_ucb_incident_events:
+      children:
+        - field_ucb_incident_events
+      parent_name: group_ucb_incident_tabs
+      weight: 22
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: Events
+    group_ucb_incident_sidebar:
+      children:
+        - field_ucb_incident_sidebar_body
+      parent_name: group_ucb_incident_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Sidebar
+id: node.ucb_incident.default
+targetEntityType: node
+bundle: ucb_incident
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ucb_incident_events:
+    type: entity_reference_paragraphs
+    weight: 6
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ucb_incident_update
+    third_party_settings: {  }
+    region: content
+  field_ucb_incident_sidebar_body:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_ucb_incident_status:
+    weight: -3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ucb_incident_type:
+    weight: -4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,26 @@
+# Ignore core when managing all of a project's dependencies with Composer
+# including Drupal core.
+core
+*.php
+*.txt
+.*
+web.config
+example.gitignore
+
+# Ignore dependencies that are managed with Composer.
+/vendor/
+/*/contrib/*
+
+# Ignore parts of the site that are we are not using VCS on yet.
+/sites/
+
+#ignore IDE files
+*.idea
+.vscode
+
+#ignore mac files
+*.DS_STORE
+
+#ignore theming files
+*.sass-cache
+*.css.map

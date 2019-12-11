@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_incident_sidebar_body
+    - node.type.ucb_incident
+  module:
+    - text
+id: node.ucb_incident.field_ucb_incident_sidebar_body
+field_name: field_ucb_incident_sidebar_body
+entity_type: node
+bundle: ucb_incident
+label: 'Sidebar Body'
+description: 'Additional information to be displayed in the sidebar.  Typically this will be meta information or contact information about this type of incident or this specific incident that aren''t part of the timeline of events.  For example, contact information for where to give or receive additional information about this Incident or general safety information the public should keep in mind during this type of information.  '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
