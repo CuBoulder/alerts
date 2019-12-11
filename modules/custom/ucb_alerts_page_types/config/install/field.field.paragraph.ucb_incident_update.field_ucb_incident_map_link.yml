@@ -9,7 +9,7 @@ field_name: field_ucb_incident_map_link
 entity_type: paragraph
 bundle: ucb_incident_update
 label: 'Map Link'
-description: 'Link to Google Maps or CU Boulder Campus Map.  '
+description: 'Link to CU Boulder Campus Map.  '
 required: false
 translatable: false
 default_value: {  }
