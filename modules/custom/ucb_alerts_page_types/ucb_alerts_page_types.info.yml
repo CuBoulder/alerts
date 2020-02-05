@@ -15,9 +15,10 @@ dependencies:
   - options
   - paragraphs
   - path
+  - pathauto
   - taxonomy
   - text
   - user
   - views
-version: 8.x-0.1-alpha-20200205
+version: 8.x-0.1-alpha-20200205a
 core_incompatible: false

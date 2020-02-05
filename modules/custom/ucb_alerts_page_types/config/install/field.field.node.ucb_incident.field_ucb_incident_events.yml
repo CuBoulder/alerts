@@ -12,7 +12,7 @@ field_name: field_ucb_incident_events
 entity_type: node
 bundle: ucb_incident
 label: Events
-description: 'Time-ordered listing of events that makeup the timeline for this Incident.  '
+description: 'Time-ordered listing of events for this Incident.  '
 required: false
 translatable: false
 default_value: {  }
