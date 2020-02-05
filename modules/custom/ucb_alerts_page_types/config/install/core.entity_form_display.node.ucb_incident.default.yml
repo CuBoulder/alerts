@@ -119,13 +119,9 @@ content:
     region: content
   field_ucb_incident_type:
     weight: -4
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   path:
     type: path

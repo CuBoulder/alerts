@@ -10,7 +10,7 @@ field_name: field_ucb_incident_type
 entity_type: node
 bundle: ucb_incident
 label: Type
-description: 'Used to denote what sort of Incident this timeline refers to.  Certain, common, Incident types will have boilerplate information to be displayed in the sidebar.  Additionally this will allow for identifying commonalities during a post-mortem analysis of the Incident.  '
+description: "<p>What sort of incident is this?  Certain, common, Incident types will have boilerplate information to be displayed in the sidebar.</p>\r\n<p><a href=\"[site:url]admin/structure/taxonomy/manage/ucb_incident_types/add\" target=\"_new\">You can add a new type on this page</a></p>"
 required: true
 translatable: false
 default_value: {  }
