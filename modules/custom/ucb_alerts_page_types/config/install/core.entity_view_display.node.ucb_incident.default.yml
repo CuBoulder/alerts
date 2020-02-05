@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_incident.field_ucb_incident_events
+    - field.field.node.ucb_incident.field_ucb_incident_priority_flag
     - field.field.node.ucb_incident.field_ucb_incident_sidebar_body
     - field.field.node.ucb_incident.field_ucb_incident_status
     - field.field.node.ucb_incident.field_ucb_incident_type
@@ -25,6 +26,13 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_ucb_incident_priority_flag:
+    weight: 105
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_ucb_incident_sidebar_body:
     weight: 104

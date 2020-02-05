@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_incident.field_ucb_incident_events
+    - field.field.node.ucb_incident.field_ucb_incident_priority_flag
     - field.field.node.ucb_incident.field_ucb_incident_sidebar_body
     - field.field.node.ucb_incident.field_ucb_incident_status
     - field.field.node.ucb_incident.field_ucb_incident_type
@@ -18,7 +19,7 @@ third_party_settings:
       children:
         - group_ucb_incident_status
         - group_ucb_incident_sidebar
-        - group_ucb_incident_events
+        - group_ucb_incident_priority
       parent_name: ''
       weight: 6
       format_type: tabs
@@ -33,6 +34,7 @@ third_party_settings:
         - title
         - field_ucb_incident_type
         - field_ucb_incident_status
+        - field_ucb_incident_events
       parent_name: group_ucb_incident_tabs
       weight: 20
       format_type: tab
@@ -43,21 +45,7 @@ third_party_settings:
         required_fields: true
         id: ''
         classes: ''
-      label: Status
-    group_ucb_incident_events:
-      children:
-        - field_ucb_incident_events
-      parent_name: group_ucb_incident_tabs
-      weight: 22
-      format_type: tab
-      region: content
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        formatter: open
-        required_fields: true
-      label: Events
+      label: Details
     group_ucb_incident_sidebar:
       children:
         - field_ucb_incident_sidebar_body
@@ -72,6 +60,20 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: Sidebar
+    group_ucb_incident_priority:
+      children:
+        - field_ucb_incident_priority_flag
+      parent_name: group_ucb_incident_tabs
+      weight: 23
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Priority
 id: node.ucb_incident.default
 targetEntityType: node
 bundle: ucb_incident
@@ -85,7 +87,7 @@ content:
     third_party_settings: {  }
   field_ucb_incident_events:
     type: entity_reference_paragraphs
-    weight: 6
+    weight: -2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -94,6 +96,12 @@ content:
       form_display_mode: default
       default_paragraph_type: ucb_incident_update
     third_party_settings: {  }
+    region: content
+  field_ucb_incident_priority_flag:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_ucb_incident_sidebar_body:
     weight: 26
