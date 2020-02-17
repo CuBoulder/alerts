@@ -5,9 +5,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: Incident
 type: ucb_incident
 description: 'Page type used to display the timestamped updates of events relating to a specific, discrete Incident.  '
