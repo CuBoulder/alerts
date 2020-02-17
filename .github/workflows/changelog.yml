@@ -21,6 +21,7 @@ jobs:
           python-version: 3.7
       - run: pip install gitchangelog pystache
       - run: gitchangelog
+      - run: pwd && ls -al
       - name: Upload Changelog as an artifact
         uses: actions/upload-artifact@master
         with:
