@@ -12,7 +12,7 @@ field_name: field_ucb_incident_events
 entity_type: node
 bundle: ucb_incident
 label: Events
-description: 'Time-ordered listing of events for this Incident.  '
+description: 'Listing of all approved messaged to be displayed along with this incident.  Details will normally be displayed in a time-ordered sequence with the newest information at the top of the page.  '
 required: false
 translatable: false
 default_value: {  }

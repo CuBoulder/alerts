@@ -11,7 +11,7 @@ field_name: field_ucb_incident_priority_flag
 entity_type: node
 bundle: ucb_incident
 label: 'Priority Flag'
-description: 'This field is only used when there are multiple active Incidents to be displayed on the front page.  Setting a higher priority will move this incident higher up in the rendering order.  Use this to determine which Incident should be displayed by default to users.  '
+description: 'Required, but defaults to Medium priority.  This field is used by the front page to determine the sort order of active incidents and therefore will really only be relevant when there are multiple active incidents at the same time.  Should that occur, you may use these settings to determine which active incident is displayed first by setting as High priority; last as low priority; and everything else in the middle as a Medium priority.  '
 required: true
 translatable: false
 default_value:

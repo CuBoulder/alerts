@@ -9,7 +9,7 @@ field_name: field_ucb_incident_map_link
 entity_type: paragraph
 bundle: ucb_incident_update
 label: 'Map Link'
-description: 'Link to CU Boulder Campus Map.  '
+description: "Link to the CU Boulder map ID.  Will be displayed as an embedded image that will be linked back to the CU Boulder Map website.  \r\nValid content is either the sharable link (e.g. https://www.colorado.edu/map/?id=336#!m/193872 ) or just the map ID number (e.g. 193872 ) "
 required: false
 translatable: false
 default_value: {  }
