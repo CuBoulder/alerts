@@ -11,7 +11,7 @@ field_name: field_ucb_incident_status
 entity_type: node
 bundle: ucb_incident
 label: Status
-description: "Used to denote the current status of this Incident.\r\n<ul>\r\n<li>ACTIVE - an Incident that is currently ongoing or which still needs to display information public import</li>\r\n<li>Closed - used once an incident no longer needs to display information that the public needs.  Will archive this Incident</li>\r\n<li>Preparing - used for an incident that is about to become active but information on the page is not yet ready for public dissemination</li>\r\n</ul>"
+description: "Please set the current status of this incident. \r\n<ul>\r\n<li>ACTIVE - an incident that is currently ongoing or which still needs to be displayed on the front page of the Alerts website.</li>\r\n<li>Closed - will archive this incident.  Details for this incident will no longer be displayed on the front page.</li>\r\n<li>Preparing - used when crafting the approved language for this incident initially.  Will not be displayed on the front page. </li>\r\n</ul>"
 required: true
 translatable: false
 default_value:

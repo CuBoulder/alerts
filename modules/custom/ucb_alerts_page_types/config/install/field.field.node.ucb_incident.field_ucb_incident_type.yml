@@ -10,7 +10,7 @@ field_name: field_ucb_incident_type
 entity_type: node
 bundle: ucb_incident
 label: Type
-description: "<p>What sort of incident is this?  Certain, common, Incident types will have boilerplate information to be displayed in the sidebar.</p>\r\n<p><a href=\"[site:url]admin/structure/taxonomy/manage/ucb_incident_types/add\" target=\"_new\">You can add a new type on this page</a></p>"
+description: "<p>Please select the type of incident for this event.  Standard, important information will be displayed in the sidebar as defined by the type selected.</p>\r\n<p><a href=\"[site:url]admin/structure/taxonomy/manage/ucb_incident_types/add\" target=\"_new\">You may also add a new type</a> if the type you need does not already exist in the list.</p>"
 required: true
 translatable: false
 default_value: {  }

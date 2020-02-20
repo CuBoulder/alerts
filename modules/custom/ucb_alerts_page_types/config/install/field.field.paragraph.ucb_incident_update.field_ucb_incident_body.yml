@@ -11,7 +11,7 @@ field_name: field_ucb_incident_body
 entity_type: paragraph
 bundle: ucb_incident_update
 label: Body
-description: 'Describe the incident update. '
+description: 'Any content to be displayed as part of this incident update.  This will generally be the main content for incident updates.  '
 required: false
 translatable: false
 default_value: {  }

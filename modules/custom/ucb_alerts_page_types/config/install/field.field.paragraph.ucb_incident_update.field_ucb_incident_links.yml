@@ -11,7 +11,7 @@ field_name: field_ucb_incident_links
 entity_type: paragraph
 bundle: ucb_incident_update
 label: Links
-description: 'Any links to additional content that would provide additional context to this Incident at this time.  '
+description: 'Any links to additional web content that is relevant to this incident update.  Will be displayed below the body content as a list.  '
 required: false
 translatable: false
 default_value: {  }

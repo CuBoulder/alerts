@@ -10,7 +10,7 @@ field_name: field_ucb_incident_images
 entity_type: paragraph
 bundle: ucb_incident_update
 label: Images
-description: 'Any graphical images that need to be attached to this update.  '
+description: 'Any images that need to be attached to this incident update. They will be displayed below the body content as thumbnails which expand into full-size when clicked.'
 required: false
 translatable: false
 default_value: {  }
