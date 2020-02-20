@@ -11,7 +11,7 @@ field_name: field_ucb_incident_timestamp
 entity_type: paragraph
 bundle: ucb_incident_update
 label: Timestamp
-description: 'Date and time of this update.  Will be displayed at the top of the incident update in bold.'
+description: 'Date and time of this update. Will be displayed in bold at the top of the incident update.'
 required: false
 translatable: false
 default_value:
