@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bef40861ccc9c92f7920bbf2e00ae369",
+    "content-hash": "90e9a7fbb2342685696034923a1f36d4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -248,14 +248,29 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb2019_base.git",
-                "reference": "7755dba23f0ced2f82412f5901f8c4203163ddfe"
+                "reference": "af01456a20aac3f8da46910e234dfb4ad70b9f4a"
             },
             "type": "drupal-theme",
             "license": [
                 "MIT"
             ],
             "description": "Drupal 8 2019 base theme for CU Boulder",
-            "time": "2020-02-10T19:39:03+00:00"
+            "time": "2020-02-25T22:37:31+00:00"
+        },
+        {
+            "name": "cu-boulder/ucb2020_admin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CuBoulder/ucb2020_admin.git",
+                "reference": "149902d00c707af866ff0540862db55c223a3f70"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "MIT"
+            ],
+            "description": "Drupal 8 admin theme for CU Boulder",
+            "time": "2020-03-02T18:47:03+00:00"
         },
         {
             "name": "doctrine/annotations",

@@ -16,11 +16,16 @@
         {
             "url": "https://github.com/CuBoulder/ucb2019_base.git",
             "type": "git"
+        },
+        {
+            "url": "https://github.com/CuBoulder/ucb2020_admin.git",
+            "type": "git"
         }
     ],
     "require": {
         "composer/installers": "^1.2",
         "cu-boulder/ucb2019_base": "master",
+        "cu-boulder/ucb2020_admin": "master",
         "drupal/admin_toolbar": "^2.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
