@@ -10,8 +10,6 @@ dependencies:
     - paragraphs.paragraphs_type.ucb_incident_update
   module:
     - datetime
-    - link
-    - media_library
     - text
 id: paragraph.ucb_incident_update.default
 targetEntityType: paragraph
@@ -26,23 +24,8 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_ucb_incident_images:
-    type: media_library_widget
-    weight: 2
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
-  field_ucb_incident_links:
-    weight: 3
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   field_ucb_incident_map_link:
-    weight: 4
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -57,4 +40,6 @@ content:
     region: content
 hidden:
   created: true
+  field_ucb_incident_images: true
+  field_ucb_incident_links: true
   status: true

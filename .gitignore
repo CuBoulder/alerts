@@ -24,3 +24,6 @@ example.gitignore
 #ignore theming files
 *.sass-cache
 *.css.map
+
+#ignore lando config files
+.lando.yml
