@@ -3,6 +3,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.ucb_incident.field_ucb_incident_cta_body
+    - field.field.node.ucb_incident.field_ucb_incident_cta_image
+    - field.field.node.ucb_incident.field_ucb_incident_cta_links
     - field.field.node.ucb_incident.field_ucb_incident_events
     - field.field.node.ucb_incident.field_ucb_incident_priority_flag
     - field.field.node.ucb_incident.field_ucb_incident_sidebar_body
@@ -22,6 +25,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_ucb_incident_cta_body: true
+  field_ucb_incident_cta_image: true
+  field_ucb_incident_cta_links: true
   field_ucb_incident_events: true
   field_ucb_incident_priority_flag: true
   field_ucb_incident_sidebar_body: true
